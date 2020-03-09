@@ -8,11 +8,6 @@ const newpageroute = require("./routes/newpage");
 
 app.use("/newpage", newpageroute);
 
-//set the middlewares
-app.use("/newpage", () => {
-  console.log("middleware running!");
-});
-
 //set the routes
 app.get("/", (req, res) => {
   res.send("Home Page");
